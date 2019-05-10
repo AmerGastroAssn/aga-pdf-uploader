@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import $ from "jquery";
 import "./Home.css";
-import { BarLoader, ClimbingBoxLoader } from "react-spinners";
+import { BarLoader } from "react-spinners";
 import { css } from "@emotion/core";
 // React Table
 import ReactTable from "react-table";
@@ -208,7 +208,7 @@ class Home extends Component {
       },
 
       {
-        Header: "Image Preview",
+        Header: "File Name",
         headerClassName: "my-favorites-column-header-group",
         style: {
           textAlign: "center"
@@ -219,7 +219,7 @@ class Home extends Component {
 
         Cell: row => {
           let fileName = row.original.Key;
-          let cleanName = fileName.slice(10, 26);
+          let cleanName = fileName.slice(10);
           return (
             <a
               href={`https://s3.amazonaws.com/aga-file-uploads/${
@@ -329,7 +329,7 @@ class Home extends Component {
                     the Upload Board will reveal it's location right away for
                     ease of use.
                     <br />
-                    The Larger the file, more time it need to upload. The Bar
+                    The Larger the file, more time it needs to upload. The Bar
                     Loading Icon will indicate the process.
                     <br />
                     <br />
