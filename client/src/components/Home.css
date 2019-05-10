@@ -1,0 +1,57 @@
+.nav-bg {
+  background-color: #faf096;
+}
+
+.upload {
+  background-color: #c5f8c8;
+}
+
+.delete {
+  background-color: #f9989f;
+}
+
+.table-head-design {
+  border-radius: 10px;
+  background-color: rgba(245, 130, 32, 1);
+}
+
+.single-head-design {
+  background-color: rgb(135, 221, 84);
+}
+
+.border-cancel {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.row-border {
+  border-bottom: 1px solid #8069fc !important;
+}
+
+.primary-italic {
+  font-style: italic;
+  font-family: "Georgia";
+  color: rgba(105, 186, 223, 1);
+}
+
+/* React Table */
+.my-favorites-column-header-group {
+  margin: 5px 0;
+}
+
+.ReactTable {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-shadow: rgba(195, 192, 192, 0.5) 0px 5px 10px 2px !important;
+  margin: 50px 0px !important;
+}
+
+img.Image {
+  max-width: 100%;
+}
